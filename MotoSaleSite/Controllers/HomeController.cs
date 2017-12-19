@@ -12,6 +12,7 @@ namespace MotoSaleSite.Controllers
     {
         public IActionResult Index()
         {
+            //comment
             return View();
         }
 
