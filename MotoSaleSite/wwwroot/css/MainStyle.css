@@ -1,0 +1,70 @@
+﻿body {
+    /* Background pattern from subtlepatterns.com */
+    background: url('../images/gray_sand.png');
+    color: #777;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#mainCarSearch {
+    margin-left: auto;
+    margin-right: auto;
+    height: 570px;
+    background-color: blue;
+    background: #e8eced url('../images/HomeSiteWallpaper.jpg');
+    background-size: cover;
+    -webkit-box-shadow: 3px 3px 30px 5px rgba(105,104,105,1);
+    -moz-box-shadow: 3px 3px 30px 5px rgba(105,104,105,1);
+    box-shadow: 3px 3px 30px 5px rgba(105,104,105,1);
+}
+
+#logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color:gray;
+}
+
+#searchArea {
+    height: 570px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    width: 200px;
+    background-color: #444444;
+    color: #111;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+    margin-right:10px;
+}
+
+    input[type=text]:focus {
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+        box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+        border: 2px solid #a5cda5;
+        background-color: #444444;
+        color: #539d53;
+    }
+
+input[type=submit] {
+    width: 410px;
+    background-color: #444444;
+    font-size: 20px;
+    color: white;
+    padding: 15px 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+}

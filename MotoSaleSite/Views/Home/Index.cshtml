@@ -1,8 +1,38 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/CSSReset.css">
+    <link rel="stylesheet" type="text/css" href="~/css/MainStyle.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+</head>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+<div id="mainCarSearch">
+    <form>
+        <div id="logo">MotoSaleSite - znajdź samochód dla siebie!</div>
+
+        <div id="searchArea">
+            <input type="text" placeholder="Marka pojazdu" onfocus="this.placeholder=''" onblur="this.placeholder='Marka pojazdu'">
+            <input type="text" placeholder="Model" onfocus="this.placeholder=''" onblur="this.placeholder='Model'">
+            <div style="clear:both" />
+            <input type="text" placeholder="Cena od" onfocus="this.placeholder=''" onblur="this.placeholder='Cena od'">
+            <input type="text" placeholder="Cena do" onfocus="this.placeholder=''" onblur="this.placeholder='Cena do'">
+            <div style="clear:both" />
+            <input type="text" placeholder="Przebieg od" onfocus="this.placeholder=''" onblur="this.placeholder='Przebieg od'">
+            <input type="text" placeholder="Przebieg do" onfocus="this.placeholder=''" onblur="this.placeholder='Przebieg do'">
+            <div style="clear:both" />
+            <input type="text" placeholder="Rok produkcji od" onfocus="this.placeholder=''" onblur="this.placeholder='Rok produkcji od'">
+            <input type="text" placeholder="Rok produkcji do" onfocus="this.placeholder=''" onblur="this.placeholder='Rok produkcji do'">
+            <div style="clear:both" />
+            <input type="text" placeholder="Województwo" onfocus="this.placeholder=''" onblur="this.placeholder='Województwo'">
+            <input type="text" placeholder="Miejscowość" onfocus="this.placeholder=''" onblur="this.placeholder='Miejscowość'">
+            <div style="clear:both" />
+            <input type="submit" value="Wyszukaj" />
+        </div>
+    </form>
+</div>
+
+@*<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -103,4 +133,4 @@
             <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
         </ul>
     </div>
-</div>
+</div>*@
