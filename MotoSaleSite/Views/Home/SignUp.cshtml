@@ -6,8 +6,32 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/CSSReset.css">
-    <link rel="stylesheet" type="text/css" href="~/css/MainStyle.css">
+    <link rel="stylesheet" type="text/css" href="~/css/RegistrationStyle.css">
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 </head>
 
-
+<div id="registrationBox">
+    <form>
+        <div id="logo">Wypełnij formularz rejestracyjny.</div>
+        <div id="RegistrationArea">
+            <input type="text" required placeholder="Imię" onfocus="this.placeholder=''" onblur="this.placeholder='Imię'">
+            <input type="text" required placeholder="Nazwisko" onfocus="this.placeholder=''" onblur="this.placeholder='Nazwisko'">
+            <select required name="sources" id="sources" class="custom-select sources" placeholder="Płeć">
+                <option>Kobieta</option>
+                <option>Mężczyzna</option>
+            </select>
+            <div style="clear:both" />
+            <input type="text" required placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+            <input type="text" required placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
+            <input type="text" required placeholder="Potwierdź hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Potwierdź hasło'">
+            <div style="clear:both" />
+            <input type="text" required placeholder="Województwo" onfocus="this.placeholder=''" onblur="this.placeholder='Województwo'">
+            <input type="text" required placeholder="Miejscowość" onfocus="this.placeholder=''" onblur="this.placeholder='Miejscowość'">
+            <div style="clear:both" />
+            <input type="date" required />
+            <div style="clear:both" />
+            <input type="submit" value="Zarejestruj" />
+        </div>
+        
+    </form>
+</div>
