@@ -45,7 +45,7 @@ namespace MotoSaleSite.Controllers
         }
 
         // GET: Users/Create
-        public IActionResult Create()
+        public IActionResult SignUp()
         {
             ViewData["UserTypeId"] = new SelectList(_context.UserType, "UserTypeId", "Type");
             return View();
@@ -56,10 +56,11 @@ namespace MotoSaleSite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,Name,Surname,Sex,Login,Password,Region,Location,BirthDate,UserTypeId")] User user)
+        public async Task<IActionResult> SignUp([Bind("UserId,Name,Surname,Sex,Login,Password,Region,Location,BirthDate,UserTypeId")] User user)
         {
             if (ModelState.IsValid)
             {
+                user.UserTypeId = 1;
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

@@ -25,6 +25,10 @@ namespace MotoSaleSite.Models
             {
                 entity.Property(e => e.AdvertisementId).HasColumnName("AdvertisementID");
 
+                entity.Property(e => e.AdvertisementPhotosLink).IsUnicode(false);
+
+                entity.Property(e => e.Description).IsUnicode(false);
+
                 entity.Property(e => e.FuelType)
                     .IsRequired()
                     .HasMaxLength(20)
@@ -33,6 +37,8 @@ namespace MotoSaleSite.Models
                 entity.Property(e => e.Location)
                     .IsRequired()
                     .IsUnicode(false);
+
+                entity.Property(e => e.MainPhotoLink).IsUnicode(false);
 
                 entity.Property(e => e.Make)
                     .IsRequired()

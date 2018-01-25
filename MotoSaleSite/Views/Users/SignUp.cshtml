@@ -1,0 +1,104 @@
+﻿@model MotoSaleSite.Models.User
+
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/CSSReset.css">
+    <link rel="stylesheet" type="text/css" href="~/css/RegistrationStyle.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+</head>
+
+
+<div id="registrationBox">
+    <form asp-action="SignUp">
+        <div id="logo">Wypełnij formularz rejestracyjny</div>
+        <div id="registrationArea">
+            <input type="text" asp-for="Name" required placeholder="Imię" onfocus="this.placeholder=''" onblur="this.placeholder='Imię'">
+            <input type="text" asp-for="Surname"required placeholder="Nazwisko" onfocus="this.placeholder=''" onblur="this.placeholder='Nazwisko'">
+            <select required asp-for="Sex" placeholder="Płeć">
+                <option value="Mężczyzna">Mężczyzna</option>
+                <option value="Kobieta">Kobieta</option>
+            </select>
+            <div style="clear:both" />
+            <input type="text" asp-for="Login" required placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+            <input type="password" asp-for="Password" required placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
+            <input type="password" required placeholder="Potwierdź hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Potwierdź hasło'">
+            <div style="clear:both" />
+            <input type="text" asp-for="Region" required placeholder="Województwo" onfocus="this.placeholder=''" onblur="this.placeholder='Województwo'">
+            <input type="text" asp-for="Location" required placeholder="Miejscowość" onfocus="this.placeholder=''" onblur="this.placeholder='Miejscowość'">
+            <div style="clear:both" />
+            <input type="date" asp-for="BirthDate" required />
+            <div style="clear:both" />
+            <input type="submit" value="Zarejestruj" />
+        </div>
+
+    </form>
+</div>
+
+
+@*<h2>Create</h2>
+
+    <h4>User</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="SignUp">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Surname" class="control-label"></label>
+                    <input asp-for="Surname" class="form-control" />
+                    <span asp-validation-for="Surname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Sex" class="control-label"></label>
+                    <input asp-for="Sex" class="form-control" />
+                    <span asp-validation-for="Sex" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Login" class="control-label"></label>
+                    <input asp-for="Login" class="form-control" />
+                    <span asp-validation-for="Login" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Region" class="control-label"></label>
+                    <input asp-for="Region" class="form-control" />
+                    <span asp-validation-for="Region" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Location" class="control-label"></label>
+                    <input asp-for="Location" class="form-control" />
+                    <span asp-validation-for="Location" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BirthDate" class="control-label"></label>
+                    <input asp-for="BirthDate" class="form-control" />
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="UserTypeId" class="control-label"></label>
+                    <select asp-for="UserTypeId" class ="form-control" asp-items="ViewBag.UserTypeId"></select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>*@
+

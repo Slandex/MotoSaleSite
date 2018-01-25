@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "SignIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/CSSReset.css">
+    <link rel="stylesheet" type="text/css" href="~/css/SignInStyle.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+</head>
+
+<div id="loginBox">
+    <form>
+        <div id="signInLogo">Wprowadź login i hasło</div>
+        <input type="text" required placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'">
+        <div style="clear:both"></div>
+        <input type="password" required placeholder="Hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Hasło'">
+        <div style="clear:both"></div>
+        <input type="submit" value="Zaloguj" />
+    </form>
+</div>
+

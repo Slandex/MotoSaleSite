@@ -14,6 +14,9 @@ namespace MotoSaleSite.Models
         public int YearOfManufacture { get; set; }
         public string Region { get; set; }
         public string Location { get; set; }
+        public string MainPhotoLink { get; set; }
+        public string AdvertisementPhotosLink { get; set; }
+        public string Description { get; set; }
         public int UserId { get; set; }
 
         public User User { get; set; }
